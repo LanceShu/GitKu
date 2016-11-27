@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="left"
+    android:background="#8f8a8a">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="1.5"
+       android:orientation="vertical"
+       android:background="#1c1c1d">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="0.3"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="match_parent"
+               android:src="@drawable/user"
+               android:layout_marginLeft="5dp"
+               />
+
+           <TextView
+               android:layout_width="150dp"
+               android:layout_height="match_parent"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:textColor="#fff"
+               android:text="个人中心"
+               android:gravity="center"/>
+
+           <ImageView
+               android:id="@+id/left"
+               android:layout_width="40dp"
+               android:layout_height="50dp"
+               android:src="@drawable/left"
+               android:layout_gravity="center"
+               />
+       </LinearLayout>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/l_care"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/care"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textColor="#000"
+                android:text="温馨小提示"
+                android:gravity="center|left"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_set"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/set"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textColor="#000"
+                android:text="设置中心"
+                android:gravity="center|left"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_about"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/about"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textColor="#000"
+                android:text="关于我们"
+                android:gravity="center|left"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/l_exit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ff0306"
+        android:textColor="#000"
+        android:textStyle="normal"
+        android:textSize="30dp"
+        android:text="退出登录"
+        android:gravity="center"/>
+</LinearLayout>

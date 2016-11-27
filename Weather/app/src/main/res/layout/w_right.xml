@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:orientation="vertical"
+    tools:context="com.example.littlestar.sharedpreferencestext.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textColorHint="#FFFFFF"
+            android:hint="   添加城市(中文/拼音) "
+            android:completionThreshold="1"
+            android:id="@+id/autoCompleteTextView"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/city_search"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+            android:layout_toRightOf="@+id/autoCompleteTextView"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前城市:"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="无"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/citylist"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"></ListView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:textColorHint="#FFFFFF"
+        android:hint="添加特别关心号码:"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:layout_above="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:text="当前号码:"
+        android:id="@+id/textView6"
+        android:layout_above="@+id/textView7"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" null"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView7"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5c5b5b"
+        android:text="发送短信"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>
