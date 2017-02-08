@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="时间"
+                android:gravity="center"
+                android:background="#9efacc"/>
+
+            <TextView
+                android:layout_marginLeft="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="星期一"
+                android:gravity="center"
+                android:background="#ffb0b5"/>
+
+            <TextView
+                android:layout_marginLeft="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="星期二"
+                android:gravity="center"
+                android:background="#ffb0d4"/>
+
+            <TextView
+                android:layout_marginLeft="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="星期三"
+                android:gravity="center"
+                android:background="#deb0ff"/>
+
+            <TextView
+                android:layout_marginLeft="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="星期四"
+                android:gravity="center"
+                android:background="#b0e3ff"/>
+
+            <TextView
+                android:layout_marginLeft="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="星期五"
+                android:gravity="center"
+                android:background="#b0b7ff"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:text="第一节"
+                android:gravity="center"
+                android:background="#ffafaf"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:text="第二节"
+                android:gravity="center"
+                android:background="#ffd1af"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:text="第三节"
+                android:gravity="center"
+                android:background="#ffffaf"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:text="第四节"
+                android:gravity="center"
+                android:background="#daffaf"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:text="第五节"
+                android:gravity="center"
+                android:background="#afffe8"/>
+
+
+        </LinearLayout>
+
+        <com.example.lance.xiyou_score.MyGridView
+            android:id="@+id/gv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:focusable="true"
+            android:numColumns="5"
+            android:scrollbars="none">
+
+        </com.example.lance.xiyou_score.MyGridView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:gravity="center"
+        android:text="西邮教务系统"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#394aff"/>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/login_school_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingRight="25dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="用户名:"/>
+
+        <EditText
+            android:id="@+id/login_name"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:hint="请输入您的8位学号"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingRight="25dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="密码:"/>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:hint="请输入您的密码"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingRight="25dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="验证码:"/>
+
+        <EditText
+            android:id="@+id/login_checkCode"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:hint="请输入图中验证码"
+            android:textSize="12dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_gravity="top"
+            android:id="@+id/login_checkCode_image"
+            android:layout_width="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="#292929"
+            android:textSize="30sp"
+            android:background="@drawable/login_in_key"
+            android:text="登录系统"/>
+
+        <Button
+            android:id="@+id/login_button_cancel"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="#292929"
+            android:textSize="30sp"
+            android:background="@drawable/login_out_key"
+            android:text="退出系统"/>
+    </LinearLayout>
+
+</LinearLayout>

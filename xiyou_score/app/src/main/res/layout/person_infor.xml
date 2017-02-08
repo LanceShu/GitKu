@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#aef0ff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="#71aefd">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/yonghu"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:gravity="center|left"
+            android:text="个人信息"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#ffafb2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="学号："/>
+
+        <TextView
+            android:id="@+id/stuID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#ffd5ae">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="姓名："/>
+
+        <TextView
+            android:id="@+id/stuName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#fff6af">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="学院："/>
+
+        <TextView
+            android:id="@+id/stuAcademy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#c5ffb1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="专业："/>
+
+        <TextView
+            android:id="@+id/stuMajor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#b1bcff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="班级："/>
+
+        <TextView
+            android:id="@+id/stuClass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#d3b1ff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="学历："/>
+
+        <TextView
+            android:id="@+id/stuEducation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="null"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
